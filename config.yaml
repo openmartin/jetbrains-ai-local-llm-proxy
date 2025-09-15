@@ -6,17 +6,17 @@ model_list:
       api_key: "xxx"
   - model_name: kimi-k2
     litellm_params:
-      model: kimi-k2-0905-preview
+      model: moonshot/kimi-k2-0905-preview
       api_base: https://api.moonshot.cn/v1
       api_key: "xxx"
   - model_name: deepseek-chat
     litellm_params:
-      model: deepseek-chat
+      model: deepseek/deepseek-chat
       api_base: "https://api.deepseek.com/v1"
       api_key: "xxx"
   - model_name: deepseek-reasoner
     litellm_params:
-      model: deepseek-reasoner
+      model: deepseek/deepseek-reasoner
       api_base: "https://api.deepseek.com/v1"
       api_key: "xxx"
 
