@@ -1,9 +1,11 @@
 # JetBrains AI local llm proxy
 
+Because JetBrains AI (non-enterprise) does not support BYOK (Bring Your Own Key), it can only use local, key-less APIs. Therefore, you need to set up a local proxy that turns a remote API with a key into a local API without one.
+
+You can do this with the `llmlite[proxy]` package.
 
 
-因为 JetBrains AI(非企业版) 不支持 BYOK（Bring Your Own Key），只能使用本地没有 KEY 的 API，所以需要本地设置一个代理，把远程有 KEY 的 API 转换成
-本地没有 KEY 的 API
+因为 JetBrains AI(非企业版) 不支持 BYOK（Bring Your Own Key），只能使用本地没有 KEY 的 API，所以需要本地设置一个代理，把远程有 KEY 的 API 转换成本地没有 KEY 的 API
 
 可以使用 `llmlite[proxy]`` 这个包来进行配置
 
@@ -50,6 +52,8 @@ litellm --config config.yaml --num_workers 1
 ```
 
 ## JetBrains AI Settings
+
+It needs to be set to `Offline Mode`.
 
 需要设置成 `Offline Mode`
 
