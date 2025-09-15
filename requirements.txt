@@ -1,0 +1,1 @@
+litellm[proxy]==1.77.1
