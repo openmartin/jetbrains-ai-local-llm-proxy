@@ -4,7 +4,21 @@ model_list:
       model: openai/glm-4.5
       api_base: "https://open.bigmodel.cn/api/paas/v4"
       api_key: "xxx"
-
+  - model_name: kimi-k2
+    litellm_params:
+      model: kimi-k2-0905-preview
+      api_base: https://api.moonshot.cn/v1
+      api_key: "xxx"
+  - model_name: deepseek-chat
+    litellm_params:
+      model: deepseek-chat
+      api_base: "https://api.deepseek.com/v1"
+      api_key: "xxx"
+  - model_name: deepseek-reasoner
+    litellm_params:
+      model: deepseek-reasoner
+      api_base: "https://api.deepseek.com/v1"
+      api_key: "xxx"
 
 litellm_settings:
   drop_params: true
