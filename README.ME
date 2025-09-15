@@ -1,0 +1,13 @@
+# local proxy for remote llm api
+
+因为 JetBrains AI，不支持 BYOK（Bring Your Own Key），只能使用本地没有 KEY 的 API，所以需要本地设置一个代理，把远程有 KEY 的 API 转换成
+本地没有 KEY 的 API
+
+可以使用 `llmlite[proxy]`` 这个包来进行配置
+
+## llmlite[proxy]
+
+```
+pip install "litellm[proxy]"
+```
+
